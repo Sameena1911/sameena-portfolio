@@ -19,7 +19,7 @@ function Navbar() {
                     <p onClick={toggle} class="sm:hidden md:hidden"><i class="fa-solid fa-bars" id="menu"></i></p>
                 </div>
             </section>
-            <section class="side-nav md:hidden transition-all duration-1000 z-30 top-0 right-0 absolute" id="sidenav"
+            <section class="side-nav md:hidden transition-all duration-1000 z-30 top-0 right-0 fixed" id="sidenav"
                 style={{height: "100vh", width: "50%", marginRight: isOpen ? "0%":"-50%", border: "solid black 1px"}}>
                 <div class="close m-8 cursor-pointer text-right ">
                     <i onClick={toggle} class="fa-solid fa-x" id="close"></i>
