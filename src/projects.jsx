@@ -34,7 +34,7 @@ function Projects() {
                     </div>
                 </div>
                 <div class="card m-7 md:w-64">
-                    <img src={image4} class="p-3"></img>
+                    <img src={image4} class="p-3 w-full"></img>
                     <div class="text p-3">
                         <h1 class="text-xl font-semibold">WhatsApp UI</h1>
                         <p class="opacity-50 ">Recreated the UI of the WhatsApp apllication using web technologies.</p>
