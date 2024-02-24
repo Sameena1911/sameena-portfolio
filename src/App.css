@@ -19,6 +19,7 @@ body {
     border: solid #6528F7 2px;
     background-color: #332941;
     border-radius: 10px;
+    
 }
 
 .home span {
@@ -199,6 +200,10 @@ body {
     }
 
 }
+@media only screen and (max-width:400px){
+    
+}
+
 
     
 
