@@ -1,38 +1,297 @@
-.App {
-  text-align: center;
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+body {
+    background-color: #191825;
+    color: aliceblue;
+
+
+    font-family: 'Ubuntu', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.about .box {
+    background-color: #191825;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.home {
+    border: solid #6528F7 2px;
+    background-color: #332941;
+    border-radius: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.home span {
+    color: #6528F7;
 }
 
-.App-link {
-  color: #61dafb;
+.home button {
+    border-radius: 10px;
+    border: solid #6528F7 2px;
+
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.home button:hover {
+    background-color: #191825;
+    transition: 1s;
+}
+
+.header {
+    border-bottom: 1px solid #6528F7;
+    position: sticky;
+    top: 0;
+    background-color: #191825;
+    z-index: 1;
+}
+.about{
+    background-color: #332941;
+}
+.about-right {
+    display: grid;
+    grid-template-columns: 150px 150px;
+
+}
+
+.box {
+    border: 2px solid grey;
+    padding: 10px;
+    margin: 10px;
+}
+
+.box p {
+    text-align: center;
+}
+
+.about {
+    border: 2px solid #6528F7;
+    border-radius: 10px;
+}
+
+.skills-area {
+    border: 2px solid #6528F7;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 20%;
+}
+
+.skill {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.skill-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.skill-bar {
+    width: 100%;
+    background: aliceblue;
+    height: 30px;
+    z-index: -1;
+    border-radius: 100px;
+    position: absolute;
+}
+
+.skill-fill {
+    background: #6528F7;
+    height: 30px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 30px;
+    overflow: hidden;
+}
+
+.skill-percent {
+    font-size: 20px;
+}
+
+.html {
+    animation: html 2s;
+    width: 90%;
+}
+
+.python {
+    animation: python 2s;
+    width: 80%;
+}
+
+.react {
+    animation: react 2s;
+    width: 50%;
+}
+
+.photoshop {
+    animation: photoshop 2s;
+    width: 80%;
+}
+
+.java {
+    animation: java 2s;
+    width: 70%;
+}
+
+@keyframes html {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 90%;
+    }
+}
+
+@keyframes python {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 80%;
+    }
+}
+
+@keyframes react {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 50%;
+    }
+}
+
+@keyframes photoshop {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 80%;
+    }
+}
+
+@keyframes java {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    skills-area {
+        padding: 0 5%;
+    }
+
+
+}
+
+.side-nav {
+    background-color: #191825;
+}
+
+.image {
+    position: relative;
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+
+}
+
+.certificates {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border: 2px solid #6528F7;
+    border-radius: 10px;
+
+}
+
+.image img {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
+
+}
+
+.image img:hover {
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0.5;
+    transition: 0.2s ease-in-out;
+}
+
+.content button {
+    border: 1px solid white;
+    color: aliceblue;
+    background-color: #65B741;
+    width: 100px;
+
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+
+}
+
+.image:hover .content {
+    opacity: 1;
+}
+
+.internships {
+    flex-wrap: wrap;
+    margin: 40px;
+
+}
+
+.card {
+    border: 1px solid #332941;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
+    background-color: #332941;
+}
+
+.project {
+    border: 2px solid #6528F7;
+    border-radius: 10px;
+}
+
+.text button {
+    background-color: #65B741;
+    width: 100px;
+    border-radius: 5px;
+
+    border: 1px solid white;
+
+}
+
+.text button:hover {
+    background-color: transparent;
+    transition: 5ms;
+}
+.footer{
+    border: 2px solid #6528F7;
+    border-radius: 10px;
+}
+.box{
+    transition: all 0.3s;
+}
+.box:hover{
+    
+        
+        transform: scale(1.15);
+    
 }
