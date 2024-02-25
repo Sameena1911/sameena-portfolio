@@ -6,8 +6,8 @@ function Navbar() {
         setIsOpen(!isOpen)
     }
     return (
-        <div>
-            <section class="header flex items-center gap-7 justify-between m-8 text-2xl sm:mx-20 md:mx-20 border-b-2">
+    <div class="sticky top-0 z-10">
+            <section class="header flex items-center gap-7 justify-between m-8 text-2xl sm:mx-20 md:mx-20 border-b-2 ">
 
                 <p>MyPortfolio</p>
 
@@ -20,7 +20,7 @@ function Navbar() {
                 </div>
             </section>
             <section class="side-nav md:hidden transition-all duration-1000 z-30 top-0 right-0 fixed" id="sidenav"
-                style={{height: "100vh", width: "50%", marginRight: isOpen ? "0%":"-50%", border: "solid black 1px"}}>
+                style={{ height: "100vh", width: "50%", marginRight: isOpen ? "0%" : "-50%", border: "solid black 1px" }}>
                 <div class="close m-8 cursor-pointer text-right ">
                     <i onClick={toggle} class="fa-solid fa-x" id="close"></i>
 

@@ -40,6 +40,7 @@ body {
 
 .header {
     border-bottom: 1px solid #6528F7;
+    
     position: sticky;
     top: 0;
     background-color: #191825;
@@ -50,14 +51,14 @@ body {
 }
 .about-right {
     display: grid;
-    grid-template-columns: 150px 150px;
+    grid-template-columns: 130px 130px;
 
 }
 
 .box {
     border: 2px solid grey;
     padding: 10px;
-    margin: 10px;
+    margin: 5px;
 }
 
 .box p {

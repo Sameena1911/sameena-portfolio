@@ -3,7 +3,7 @@ function About() {
     return (
         <div>
             <h1 class="text-center text-4xl font-bold p-3">ABOUT ME</h1>
-            <section id="about" class="about md:flex m-8 md:mx-20 p-5" style={{backgroundcolor: "#332941"}}>
+            <section id="about" class="about md:flex m-8 md:mx-20 p-5 items-center" style={{backgroundcolor: "#332941"}}>
 
                 <div class="about-left" style={{backgroundcolor: "#332941"}}>
                     <h1 class="text-lg p-3" style={{backgroundcolor: "#332941"}}>Hello! I'm a <span
@@ -18,7 +18,7 @@ function About() {
                         India</h3>
                 </div>
 
-                <div class="about-right p-3">
+            <div class="about-right ">
                     <div class="box">
                         <p class="text-violet-700 text-2xl">#</p>
                         <h1 class="text-center">Years of Experience</h1>
