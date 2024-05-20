@@ -1,6 +1,6 @@
 import './App.css'
 import homeimage from "./assets/homeimage.jpg"
-import resume from "./images/Resume.pdf"
+import resume from "./images/Resume 1.pdf"
 function Home() {
     return (
         <div>
